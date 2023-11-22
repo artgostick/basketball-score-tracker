@@ -76,10 +76,14 @@ button,
 
 #undoButton {
     left: 25%;
+    background-color: green;
+    color: white;
 }
 
 #clearButton {
     right: 25%;
+    background-color: red;
+    color: white;
 }
 
 #clearButton,
