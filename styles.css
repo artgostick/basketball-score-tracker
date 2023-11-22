@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'CursedTimer';
+    src: url('CursedTimerUlil-Aznm.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1B244A;
+    color: white;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 3em;
+    letter-spacing: 2px;
+    margin-bottom: .5em;
+}
+
+button,
+.currentScore {
+    font-family: 'CursedTimer', sans-serif;
+    letter-spacing: 2.5px;
+
+}
+
+.container {
+    height: 50%;
+    width: auto;
+    display: flex;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    align-items: center;
+}
+
+.currentScore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font-size: 5em;
+    background-color: black;
+    color: #F94F6D;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.button {
+    padding: .3em;
+    margin: 1em .2em .2em;
+    font-size: 1.5em;
+    border-radius: .4em;
+    border: 1px solid #9AABD8;
+    background-color: transparent;
+    color: #9AABD8;
+}
+
+#undoButton {
+    left: 25%;
+}
+
+#clearButton {
+    right: 25%;
+}
+
+#clearButton,
+#undoButton {
+    position: fixed;
+    top: 10px;
+    z-index: 1000;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+    #undoButton {
+        left: 10px;
+    }
+
+    #clearButton {
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        flex-direction: column;
+        padding-top: 10PX;
+    }
+
+    .card {
+        padding: 5px;
+
+    }
+
+}
